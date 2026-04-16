@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -822,3 +823,61 @@
     </script>
   </body>
 </html>
+=======
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion — Gestion PFE FST Sidi Bouzid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-brand">
+        <span class="nav-logo">🎓</span>
+        <span>Gestion PFE — FST Sidi Bouzid</span>
+    </div>
+</nav>
+
+<main class="container">
+<div class="login-wrapper">
+    <div class="login-card">
+        <div class="login-logo">🎓</div>
+        <h1 class="login-title">Connexion</h1>
+        <p class="login-subtitle">Système de gestion des Projets de Fin d'Études<br>A.U. 2025-2026</p>
+
+        <?php if ($error): ?>
+            <div class="alert alert-danger"><?= htmlspecialchars($error) ?></div>
+        <?php endif; ?>
+        <?php if ($msg === 'deconnexion'): ?>
+            <div class="alert alert-info">Vous avez été déconnecté avec succès.</div>
+        <?php endif; ?>
+
+        <form method="POST" action="index.php">
+            <div class="form-group">
+                <label for="email">Email professionnel</label>
+                <input type="email" id="email" name="email" required
+                       placeholder="prenom.nom@etud.fst.tn"
+                       value="">
+            </div>
+            <div class="form-group">
+                <label for="mot_de_passe">Mot de passe</label>
+                <input type="password" id="mot_de_passe" name="mot_de_passe" required placeholder="••••••••">
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%; margin-top:0.5rem;">
+                Se connecter
+            </button>
+        </form>
+
+        
+        
+    </div>
+</div>
+</main>
+
+<footer class="footer">
+    <p>© <?= date('Y') ?> FST Sidi Bouzid — Système de Gestion des PFE</p>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
+>>>>>>> fac9f6e6ff6f480d2339e43f5e1ce9eb6d1c478d
