@@ -1,0 +1,97 @@
+<style>
+    :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #34495e;
+        --accent-color: #3498db;
+        --bg-color: #f8f9fa;
+        --text-color: #333;
+    }
+
+    body { 
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+        background: linear-gradient(135deg, #e0eafc, #cfdef3);
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px; 
+    }
+
+    .container { 
+        background: white; 
+        padding: 40px; 
+        border-radius: 15px; 
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+        width: 100%; 
+        max-width: 650px; 
+        transition: transform 0.3s ease;
+    }
+
+    .container:hover {
+        transform: translateY(-5px);
+    }
+
+    h2 { 
+        color: var(--primary-color); 
+        text-align: center; 
+        margin-bottom: 30px;
+        font-size: 28px;
+        border-bottom: 2px solid var(--accent-color);
+        padding-bottom: 10px;
+        display: inline-block;
+        width: 100%;
+    }
+
+    label { 
+        display: block; 
+        margin: 15px 0 5px; 
+        color: var(--secondary-color); 
+        font-weight: 600; 
+        font-size: 14px;
+    }
+
+    input, textarea { 
+        width: 100%; 
+        padding: 12px; 
+        border: 1px solid #ddd; 
+        border-radius: 8px; 
+        box-sizing: border-box; 
+        font-size: 15px;
+        transition: all 0.3s ease;
+        background-color: #fafafa;
+    }
+
+    input:focus, textarea:focus {
+        outline: none;
+        border-color: var(--accent-color);
+        background-color: #fff;
+        box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+    }
+
+    button { 
+        width: 100%; 
+        padding: 15px; 
+        background: var(--primary-color); 
+        color: white; 
+        border: none; 
+        border-radius: 8px; 
+        margin-top: 30px; 
+        cursor: pointer; 
+        font-size: 17px; 
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+    }
+
+    button:hover { 
+        background: var(--accent-color); 
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    /* تحسين شكل الـ Placeholder */
+    ::placeholder {
+        color: #bbb;
+        font-style: italic;
+    }
+</style>
